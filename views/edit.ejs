@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<div class="box">
+  <h2>Edit Todo</h2>
+  <form action="/edit/<%= item.id %>" method="post">
+    <input type="text" name="todo" value="<%= item.text %>" />
+    <button type="submit">Save</button>
+    <a href="/"><button class="btn-delete">Cancel</button></a>
+  </form>
+</div>
+
+<%- include("partials/footer") %>
